@@ -15,9 +15,9 @@ namespace KeyBridge.Connections
         public SocketServer(int port , IPAddress address)
         {
             this.Port = port;
-            if(Address != null)
+            if(address != null)
             {
-                this.Address = IPAddress.Any;
+                this.Address = address;
             }
         }
 
